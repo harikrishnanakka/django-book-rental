@@ -41,7 +41,7 @@ def fetch_book_from_openlibrary(title):
     authors = ', '.join(best.get('author_name', []))
     key = best.get('key')
 
-    # ✅ Always ensure pages is an integer
+    
     pages = best.get('number_of_pages') or best.get('number_of_pages_median') or 250
     try:
         pages = int(pages)
